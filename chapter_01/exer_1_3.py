@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 def frequency(a):
+  """
+  Count the frequency of characters in a given string.
+  """
   freq = {}
   for c in a:
     if freq.get(c) is None:
@@ -10,6 +13,9 @@ def frequency(a):
   return freq
 
 def is_permutation(a, b):
+  """
+  Check if a string is a permutation of the other.
+  """
   if len(a) == len(b):
     freqa = frequency(a)
     freqb = frequency(b)
@@ -27,7 +33,8 @@ if __name__ == "__main__":
     ('abcde', 'abced'),
     ('abcde', 'abcdf'),
     ('abcde', 'abcdef'),
-    ('abcdef', 'abcde')
+    ('abcdef', 'abcde'),
+    ('abcde', 'abcee')
   ]
   
   for item in options:

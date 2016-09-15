@@ -1,12 +1,18 @@
 #!/usr/bin/env python
 
 def words():
+  """
+  A generator thta return the words from the `small_text.txt` file.
+  """
   text = open("small_text.txt", 'r')
   content = text.read()
   for item in content.split(' '):
     yield item.strip()
 
 def reverse(word):
+  """
+  Reverse the characters in the given string.
+  """
   middle = len(word) / 2
   chars = list(word) 
   for x in xrange(middle):

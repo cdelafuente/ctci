@@ -19,3 +19,4 @@ if __name__ == "__main__":
   for item in words():
     if has_duplicates(item):
       print item
+
